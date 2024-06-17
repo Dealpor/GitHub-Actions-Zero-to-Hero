@@ -4,11 +4,11 @@ on: [push]
 
 jobs:
   build:
-    runs-on: self-hosted
+    runs-on: ubuntu-letest
 
     strategy:
       matrix:
-        python-version: [3.12]
+        python-version: [3.8]
 
     steps:
     - uses: actions/checkout@v3
